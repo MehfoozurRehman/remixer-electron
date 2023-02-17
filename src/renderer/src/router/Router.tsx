@@ -1,5 +1,5 @@
 import { Fragment, Suspense } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
 import Head from "./Head";
 import { meta } from "../layouts/app";
@@ -77,7 +77,7 @@ export default function Router() {
     <Suspense fallback={<Loading />}>
       <Head title={title} image={image} url={url} description={description} />
       <RouterProvider
-        router={createBrowserRouter([
+        router={createHashRouter([
           {
             path: "/",
             element: <App />,

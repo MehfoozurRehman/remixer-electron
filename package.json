@@ -6,7 +6,6 @@
   "author": "example.com",
   "homepage": "https://www.electronjs.org",
   "scripts": {
-    "format": "prettier --write .",
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
     "build": "electron-vite build",
